@@ -2,6 +2,7 @@ package day37_ArrayList;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.function.Predicate;
 
 public class Lambda_Expression {
@@ -48,6 +49,24 @@ public class Lambda_Expression {
 
         System.out.println( names );   //  [Monica, Musti, Sumeyra, Hasan, Beril]
 
+        System.out.println("==================================================");
+
+        ArrayList<Integer> nums = new ArrayList<>();
+        nums.addAll( Arrays.asList(1, 1, 2, 2, 3, 3, 4, 5, 6, 7));
+
+        nums.removeIf( p -> Collections.frequency(nums, p) != 1 );
+
+        System.out.println( nums );     // [4, 5, 6, 7]
+
+        System.out.println("==================================================");
+
+        ArrayList<Character> charList = new ArrayList<>();
+        charList.addAll( Arrays.asList('a', 'b', 'c', '3', '4', '5', '6' ,'&', '%', '@', '#', '*'));
+
+
+        charList.removeIf( p -> Character.isDigit(p) || Character.isAlphabetic(p));
+
+        System.out.println(charList);
 
     }
 }
