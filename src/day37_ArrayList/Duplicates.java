@@ -29,11 +29,11 @@ public class Duplicates {
         ArrayList<Integer> grades = new ArrayList<>();
         grades.addAll( Arrays.asList(100, 90, 75, 85, 65, 85, 55, 45, 73, 73, 35, 47, 105, -20, -36, 120));
 
-        ArrayList<Integer> gradeOfA = new ArrayList<>();
-        ArrayList<Integer> gradeOfB = new ArrayList<>();
-        ArrayList<Integer> gradeOfC = new ArrayList<>();
-        ArrayList<Integer> gradeOfD = new ArrayList<>();
-        ArrayList<Integer> gradeOfF = new ArrayList<>();
+        ArrayList<Integer> gradeOfA = new ArrayList<>();  // 90 ~ 100
+        ArrayList<Integer> gradeOfB = new ArrayList<>();  // 80 ~ 89
+        ArrayList<Integer> gradeOfC = new ArrayList<>();  // 70 ~ 79
+        ArrayList<Integer> gradeOfD = new ArrayList<>();  // 60 ~ 69
+        ArrayList<Integer> gradeOfF = new ArrayList<>();  // below 60
 
         gradeOfA.addAll(grades);
 
