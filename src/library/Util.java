@@ -187,7 +187,79 @@ public class Util {
         }
         return arr2;
     }
-// overload for double,Double,Integer,char,Character,String
+
+    public static char[] addElement(char[] arr, char n){
+        char[] arr2 = new char[arr.length+1];
+        arr2[arr2.length-1] = n;
+
+        int k=0;
+        for (char each : arr){
+            arr2[k] = each;
+            k++;
+        }
+        return arr2;
+    }
+
+    public static double[] addElement(double[] arr, double n){
+        double[] arr2 = new double[arr.length+1];
+        arr2[arr2.length-1] = n;
+
+        int k=0;
+        for (double each : arr){
+            arr2[k] = each;
+            k++;
+        }
+        return arr2;
+    }
+
+    public static Double[] addElement(Double[] arr, Double n){
+        Double[] arr2 = new Double[arr.length+1];
+        arr2[arr2.length-1] = n;
+
+        int k=0;
+        for (Double each : arr){
+            arr2[k] = each;
+            k++;
+        }
+        return arr2;
+    }
+
+    public static Integer[] addElement(Integer[] arr, Integer n){
+        Integer[] arr2 = new Integer[arr.length+1];
+        arr2[arr2.length-1] = n;
+
+        int k=0;
+        for (Integer each : arr){
+            arr2[k] = each;
+            k++;
+        }
+        return arr2;
+    }
+
+    public static Character[] addElement(Character[] arr, Character n){
+        Character[] arr2 = new Character[arr.length+1];
+        arr2[arr2.length-1] = n;
+
+        int k=0;
+        for (Character each : arr){
+            arr2[k] = each;
+            k++;
+        }
+        return arr2;
+    }
+
+    public static String[] addElement(String[] arr, String n){
+        String[] arr2 = new String[arr.length+1];
+        arr2[arr2.length-1] = n;
+
+        int k=0;
+        for (String each : arr){
+            arr2[k] = each;
+            k++;
+        }
+        return arr2;
+    }
+
     public static int[] sortDescending(int[] arr){
 
         Arrays.sort(arr);
