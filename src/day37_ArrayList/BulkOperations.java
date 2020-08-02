@@ -7,6 +7,8 @@ public class BulkOperations {
 
     public static void main(String[] args) {
 
+        // containsAll(collectionType): checks the given list elements are contained in the arraylist or not
+
         ArrayList<Integer> list = new ArrayList<>();
             list.addAll(Arrays.asList(1,2,3,4));
 
@@ -20,6 +22,8 @@ public class BulkOperations {
         System.out.println(r2);  // true
 
         System.out.println("=====================================");
+
+        // addAll( collectionType) : add multiple elements at the same time to arraylist
 
         ArrayList<Integer> list2 = new ArrayList<>();
             list2.add(1);
@@ -46,6 +50,34 @@ public class BulkOperations {
 
         numbers.addAll( Arrays.asList(nums));
             */
+
+        System.out.println("================================================");
+
+        // removeAll( collectionType): removes all matching elements
+
+        ArrayList<Integer> nums = new ArrayList<>();
+            nums.addAll( Arrays.asList(1, 1, 1, 1, 1, 2, 2, 3, 4, 5, 5, 6, 7, 8, 9, 10, 11, 12, 13));
+
+        System.out.println(nums);           // [1, 1, 1, 1, 1, 2, 2, 3, 4, 5, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+
+        nums.removeAll( Arrays.asList(1, 2, 5, 10, 11) );
+
+        System.out.println(nums);           //  [3, 4, 6, 7, 8, 9, 12, 13]
+
+        System.out.println("================================================");
+
+        // retainAll( collectionType): removes all NON-matching elements
+
+        ArrayList<Integer> num1= new ArrayList<>();
+            num1.addAll( Arrays.asList(1, 1, 2, 2, 3, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8 , 8, 9 , 9) );
+
+        System.out.println(num1);           // [1, 1, 2, 2, 3, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9]
+
+        // only keep the elements that are either 1 or 2 or 3 or 9
+
+        num1.retainAll( Arrays.asList(1, 2, 3, 9));
+
+        System.out.println(num1);           // [1, 1, 2, 2, 3, 3, 3, 9, 9]
 
     }
 }
