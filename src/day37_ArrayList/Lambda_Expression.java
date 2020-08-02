@@ -60,13 +60,6 @@ public class Lambda_Expression {
 
         System.out.println("==================================================");
 
-        ArrayList<Character> charList = new ArrayList<>();
-        charList.addAll( Arrays.asList('a', 'b', 'c', '3', '4', '5', '6' ,'&', '%', '@', '#', '*'));
-
-
-        charList.removeIf( p -> Character.isDigit(p) || Character.isAlphabetic(p));
-
-        System.out.println(charList);
 
     }
 }
