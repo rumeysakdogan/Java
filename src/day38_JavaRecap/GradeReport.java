@@ -7,7 +7,7 @@ public class GradeReport {
     public static void main(String[] args) {
 
         ArrayList<Integer> grades = new ArrayList<>();
-        grades.addAll(Arrays.asList( 100, 96, 85, 75, 55, 45, 73, 35, 47, 60, 87, 77, 67, 57, 47, 93, 83, 73, 63, 53, 43));
+        grades.addAll(Arrays.asList( 100, 96, 61, 64, 67, 85, 75, 55, 45, 81, 82,  73, 35, 47, 60, 87, 77, 67, 57, 47, 93, 83, 73, 63, 53, 43));
 
         ArrayList<Integer> gradeA = new ArrayList<>();  // 90 ~ 100
         gradeA.addAll( grades );
