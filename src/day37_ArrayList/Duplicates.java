@@ -37,7 +37,7 @@ public class Duplicates {
 
         gradeOfA.addAll(grades);
 
-        gradeOfA.removeIf( p -> p < 90 || p > 100 || p < 0);
+        gradeOfA.removeIf( p -> p < 90 );
 
         System.out.println( gradeOfA );  // [100, 90]
 
@@ -48,7 +48,7 @@ public class Duplicates {
 
         gradeOfB.addAll(grades);
 
-        gradeOfB.removeIf( p -> !(p >= 80 && p < 90) || p > 100 || p < 0 );
+        gradeOfB.removeIf( p -> !(p >= 80 && p < 90) );
 
         System.out.println( gradeOfB ); // [85, 85]
 
@@ -57,7 +57,7 @@ public class Duplicates {
 
         gradeOfC.addAll(grades);
 
-        gradeOfC.removeIf( p -> !(p >= 70 && p < 80) || p > 100 || p < 0);
+        gradeOfC.removeIf( p -> !(p >= 70 && p < 80) );
 
         System.out.println( gradeOfC );  // [75, 73, 73]
 
@@ -67,7 +67,7 @@ public class Duplicates {
 
         gradeOfD.addAll(grades);
 
-        gradeOfD.removeIf( p -> !(p >= 60 && p < 70) || p > 100 || p < 0);
+        gradeOfD.removeIf( p -> !(p >= 60 && p < 70) );
 
         System.out.println( gradeOfD );  // [65]
 
@@ -77,15 +77,11 @@ public class Duplicates {
 
         gradeOfF.addAll(grades);
 
-        gradeOfF.removeIf( p -> p >= 60 || p > 100 || p < 0);
+        gradeOfF.removeIf( p -> p >= 60 );
 
         System.out.println( gradeOfF );  // [55, 45, 35, 47]
 
         System.out.println("Number of students made F: " + gradeOfF.size());  // 4
-
-
-
-
 
     }
 }
