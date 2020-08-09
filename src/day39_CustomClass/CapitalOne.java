@@ -44,6 +44,12 @@ public class CapitalOne {
 
       // employeeList.removeIf(p -> p.salary < 150000);
 
+       // employeeList.removeIf(p -> p.jobTitle.equals("QA") );
+
+        //employeeList.removeIf(p -> p.name.toLowerCase().contains("m"));
+
+        employeeList.removeIf(p -> p.name.startsWith("R"));
+
         for( Employee each : employeeList){
             // each.getEmployeeInfo();
             System.out.println( each.name+ " : "+ each.salary);
