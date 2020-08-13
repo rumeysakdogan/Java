@@ -30,7 +30,6 @@ public class BankAccount {
         System.out.println("Account Holder: " + accountHolder);
         System.out.println("Account Number: " + accountNumber);
         System.out.println("Available Balance: $" + balance);
-        System.out.println("Account Type: " + accountType);
         System.out.println("===============================================");
     }
 
@@ -39,7 +38,7 @@ public class BankAccount {
     }
 
     public void deposit(double amount){
-        System.out.println("Depositing $"+ amount + " to account number" + accountNumber);
+        System.out.println("Depositing $"+ amount + " to account number " + accountNumber);
         balance += amount;
     }
 
