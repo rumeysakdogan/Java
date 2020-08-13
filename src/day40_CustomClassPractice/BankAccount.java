@@ -29,24 +29,28 @@ public class BankAccount {
         System.out.println("Account Type: " + accountType);
         System.out.println("Account Holder: " + accountHolder);
         System.out.println("Account Number: " + accountNumber);
-        System.out.println("Available Balance" + balance);
+        System.out.println("Available Balance: $" + balance);
         System.out.println("Account Type: " + accountType);
         System.out.println("===============================================");
     }
 
     public void checkBalance(){
-        System.out.println("Available Balance: " + balance);
+        System.out.println("Available Balance: $" + balance);
     }
 
     public void deposit(double amount){
+        System.out.println("Depositing $"+ amount + " to account number" + accountNumber);
         balance += amount;
     }
 
     public void withdraw(double amount){
+        if (amount > balance ){
+            System.out.println("Not enough balance");
+            return;
+        }
+        System.out.println("Withdrawing $"+ amount + " from account number " + accountNumber);
         balance -= amount;
-//        if (amount > balance ){
-//            balance -= 35;
-//        }
+
     }
 
 }
