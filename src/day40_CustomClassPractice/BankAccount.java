@@ -17,11 +17,12 @@ public class BankAccount {
     String accountNumber;
     double balance;
 
-    public void setAccountInfo(String userAccountType, String name, String userAccountNumber, double userBalance ){
-        accountType = userAccountType;
-        accountHolder = name;
-        accountNumber = userAccountNumber;
-        balance = userBalance;
+    // if the local variable has th same name as instance variable, we need to use this. keyword to call instance variable under method
+    public void setAccountInfo(String accountType, String accountHolder, String accountNumber, double balance ){
+        this.accountType = accountType;
+        this.accountHolder = accountHolder;
+        this.accountNumber = accountNumber;
+        this.balance = balance;
     }
 
     public void getAccountInfo(){
