@@ -1,7 +1,6 @@
-package day41_Static;
+package day41_toString;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 /*
    create 5 objects of Cat and store them into an array variable
@@ -29,8 +28,6 @@ public class CatObjects {
         ArrayList<Cat> maleCats = new ArrayList<>();
         ArrayList<Cat> femaleCats = new ArrayList<>();
 
-        // 1st approach: with loops:
-/*
         for (int i = 0; i < cats.length; i++) {
             if( cats[i].gender == 'M'){
                 maleCats.add( cats[i] );
@@ -48,21 +45,6 @@ public class CatObjects {
         for(Cat each : femaleCats){
             System.out.println( each );
         }
-*/
-        // 2nd approach: without loops
-
-        maleCats.addAll(Arrays.asList(cats));
-
-        maleCats.removeIf( p -> p.gender == 'F');
-        System.out.println( maleCats );
-
-        System.out.println("=======================================");
-
-        femaleCats.addAll( Arrays.asList(cats));
-        femaleCats.removeAll( maleCats );
-
-        System.out.println( femaleCats );
-
 
     }
 }

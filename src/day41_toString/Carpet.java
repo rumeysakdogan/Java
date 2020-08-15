@@ -1,4 +1,4 @@
-package day41_Static;
+package day41_toString;
 /*
  1. create a custom class for the carpet class that should contain the following:
 
