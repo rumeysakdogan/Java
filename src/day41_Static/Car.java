@@ -17,9 +17,9 @@ public class Car {
     }
 
     public String toString(){
-        return "Brand: "+brand+", Model: "+model+", Year: "+year+", Price: "+price+", Color: "+color;
+        return year+" "+brand+" "+model+", "+color+", $"+price;
     }
-
+    // 2020 BMW X6, Black, $75000.0
 
 
 }
