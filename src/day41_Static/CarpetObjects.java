@@ -28,24 +28,24 @@ public class CarpetObjects {
         ArrayList<Carpet> regularCarpets = new ArrayList<>();
 
 
-        for (int i = 0; i < carpets.length ; i++) {
-            if (carpets[i].isPersian){
-                persianCarpets.add(  carpets[i]  );
-            }else{
-                regularCarpets.add(  carpets[i]  );
-            }
-        }
-//        for (Carpet each : carpets){
-//            if(each.isPersian){
-//                persianCarpets.add(each);
+//        for (int i = 0; i < carpets.length ; i++) {
+//            if (carpets[i].isPersian){
+//                persianCarpets.add(  carpets[i]  );
 //            }else{
-//                regularCarpets.add(each);
+//                regularCarpets.add(  carpets[i]  );
 //            }
 //        }
-//
-//        for (Carpet each : persianCarpets){
-//            each.getCarpetInfo();
-//        }
+        for (Carpet each : carpets){
+            if(each.isPersian){
+                persianCarpets.add(each);
+            }else{
+                regularCarpets.add(each);
+            }
+        }
+
+        for (Carpet each : persianCarpets){
+            each.getCarpetInfo();
+        }
 
 
 

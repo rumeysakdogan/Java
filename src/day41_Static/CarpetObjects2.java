@@ -20,11 +20,11 @@ public class CarpetObjects2 {
         ArrayList<Carpet> regularCarpets = new ArrayList<>();
             regularCarpets.addAll(Arrays.asList( carpets));
 
-        persianCarpets.removeIf(p -> p.isPersian == false);
+        persianCarpets.removeIf(p -> !p.isPersian);
 
         System.out.println("Total # of Persian Carpets: " + persianCarpets.size());
 
-        regularCarpets.removeIf( p -> p.isPersian == true);
+        regularCarpets.removeAll(persianCarpets);
 
         System.out.println("Total # of Regular Carpets: " + regularCarpets.size());
 

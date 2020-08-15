@@ -42,4 +42,9 @@ public class Carpet {
         System.out.println("=========================================");
     }
 
+    // purpose of toString() method: to be able to print object by calling this method
+
+    public String toString(){
+        return "Width: "+width+", Length: "+length+", Unit Price: "+unitPrice+", Persian Carpet: "+isPersian;
+    }
 }
