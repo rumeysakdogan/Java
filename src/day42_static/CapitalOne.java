@@ -52,7 +52,7 @@ public class CapitalOne {
         System.out.println("=====================================================");
 
         Developers dev1 = new Developers();
-        dev1.setInfo("Burak",'M',6543L,"Frontend Dev",153000);
+            dev1.setInfo("Burak",'M',6543L,"Frontend Dev",153000);
         team1.addDeveloper(dev1);
         System.out.println( team1 );
 
@@ -60,8 +60,27 @@ public class CapitalOne {
 
         ScrumTeam[] scrumTeams = { team1, new ScrumTeam(), new ScrumTeam() };
         /*
-        print al the devs and testers from scrum team
+        print all the devs and testers from scrum team
         find maximum salary of devs, maximum salary of testers
          */
+
+//        scrumTeams[1].addDevelopers(devs);
+//
+//        Developers[] devs = {new Developers(), new Developers(), new Developers(), new Developers(), new Developers()};
+//            dev2.setInfo("Ali",'M',2018l,"Frontend Dev",150000);
+//            devs[1].setInfo("John",'M',2237l,"Fullstack Dev",179000);
+//            devs[2].setInfo("Hasan",'M',2085l,"Backend Dev",165000);
+//            devs[3].setInfo("Cindy",'F',2709l,"Fullstack Dev",180000);
+//            devs[4].setInfo("Kyle",'M',2000l,"Frontend Dev",165000);
+//
+//        scrumTeams[2].addDevelopers(developers2);
+//
+//        Developers[] developers2 = {new Developers(), new Developers(), new Developers(), new Developers(), new Developers()};
+//            developers2[0].setInfo("Cihat",'M',2908l,"Frontend Dev",150000);
+//            developers2[1].setInfo("Rumeysa",'F',2587l,"Fullstack Dev",170000);
+//            developers2[2].setInfo("Tuba",'F',2135l,"Backend Dev",158000);
+//            developers2[3].setInfo("Vlad",'M',2209l,"Fullstack Dev",180000);
+//            developers2[4].setInfo("Rama",'F',2307l,"Frontend Dev",148000);
+
     }
 }
