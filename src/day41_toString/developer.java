@@ -1,6 +1,6 @@
 package day41_toString;
 
-public class Developer {
+class Developer {
 
     String name;
     double salary;
@@ -13,6 +13,7 @@ public class Developer {
         this.gender = gender;
         this.age = age;
     }
+
     public void coding(){
         System.out.println(name + " is coding");
     }
