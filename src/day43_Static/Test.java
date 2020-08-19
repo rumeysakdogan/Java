@@ -5,7 +5,6 @@ import java.util.Arrays;
 import static library.Resources.a;  // imports only specific static members from Resources
 import static library.Resources.method1;
 
-import static library.Resources.*;  // imports all class members from Resources
 
 public class Test {
 
@@ -23,6 +22,6 @@ public class Test {
         System.out.println(Data.list);
 
         System.out.println(a);
-
+        method1();
     }
 }
