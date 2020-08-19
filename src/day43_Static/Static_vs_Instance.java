@@ -20,8 +20,8 @@ public class Static_vs_Instance {
 
         System.out.println("=======================================");
 
-        System.out.println( obj1.staticVariable);  // NOT preferred way to call static variables
-        System.out.println( obj2.staticVariable);
+//        System.out.println( obj1.staticVariable);  NOT preferred way to call static variables
+//        System.out.println( obj2.staticVariable); it works
 
         System.out.println( Static_vs_Instance.staticVariable ); // preferred way calling statics through classname
     }
