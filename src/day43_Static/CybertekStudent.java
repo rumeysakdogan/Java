@@ -26,11 +26,4 @@ public class CybertekStudent {
     public static void printSchoolName(){
         System.out.println("School name: " + schoolName);
     }
-
-    public String toString(){
-
-    }
-
-
-
 }
