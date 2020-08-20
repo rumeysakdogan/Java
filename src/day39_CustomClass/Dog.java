@@ -14,6 +14,17 @@ public class Dog {
     int age;
     String color;
 
+
+    public Dog(String dogName, String dogBreed, String dogSize, int dogAge, String dogColor){
+        name = dogName;
+        breed = dogBreed;
+        size = dogSize;
+        age = dogAge;
+        color = dogColor;
+    }
+
+ /*    sets the info of the dog
+
     public void setDogInfo(String dogName, String dogBreed, String dogSize, int dogAge, String dogColor){
         name = dogName;
         breed = dogBreed;
@@ -21,7 +32,7 @@ public class Dog {
         age = dogAge;
         color = dogColor;
     }
-    // sets the info of the dog
+ */
 
     public void getDogInfo(){
         System.out.println("Name: " + name + ", Breed: " + breed +", Size: " + size +", Color: " + color + ", Age: "+age+" years old");

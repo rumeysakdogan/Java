@@ -7,20 +7,21 @@ public class CapitalOne {
 
     public static void main(String[] args) {
 
-        Employee employee1 = new Employee();
-        Employee employee2 = new Employee();
-        Employee employee3 = new Employee();
-        Employee employee4 = new Employee();
-        Employee employee5 = new Employee();
-        Employee employee6 = new Employee();
+        Employee employee1 = new Employee("Roman",'M',198765432l,"QA",120000.0);
+        Employee employee2 = new Employee("Meeriem",'F',768954320L,"QA",120000.50);
+        Employee employee3 = new Employee("Ramazan", 'M', 342151342l, "SDET", 150000.0);
+        Employee employee4 = new Employee("Musa", 'M', 123456789l, "SDET", 135000.0);
+        Employee employee5 = new Employee("Tetiana", 'F', 987654321L, "SDET", 125000.0);
+        Employee employee6 = new Employee("John",'M', 345678290L,"BA",150000.70);
 
+/*
         employee1.setEmployeeInfo("Roman",'M',198765432l,"QA",120000.0);
         employee2.setEmployeeInfo("Meeriem",'F',768954320L,"QA",120000.50);
         employee3.setEmployeeInfo("Ramazan", 'M', 342151342l, "SDET", 150000.0);
         employee4.setEmployeeInfo("Musa", 'M', 123456789l, "SDET", 135000.0);
         employee5.setEmployeeInfo("Tetiana", 'F', 987654321L, "SDET", 125000.0);
         employee6.setEmployeeInfo("John",'M', 345678290L,"BA",150000.70);
-
+*/
 
 
         ArrayList<Employee> employeeList = new ArrayList<>();

@@ -7,7 +7,7 @@ package day44_Constructor;
                 }
 
 
-  Every class MUST hava a constructor, without constructor -> no class ; without class -> no object !
+  Every class MUST have a constructor, without constructor -> no class ; without class -> no object !
   if you do not create a constructor in the class ,
              compiler will create one for you as a default one with no arguments.
  */
@@ -25,7 +25,7 @@ public class Constructor_Intro {
 
        // Constructor_Intro obj1 = new Constructor_Intro(10);
 
-    //    new Constructor_Intro(); // object created by using default no-arg constructor created  by compiler
+    //    new Constructor_Intro();  object created by using default no-arg constructor created  by compiler
 
          Constructor_Intro obj = new Constructor_Intro("Rumeysa");
          Constructor_Intro obj2 = new Constructor_Intro("Dawud");

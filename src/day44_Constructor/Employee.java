@@ -30,6 +30,16 @@ public class Employee {
         isEmployed = true;
     }
 
+    public Employee(String name, int id, int ssn, String jobTitle, double salary, char gender){
+        this.name = name;
+        this.id = id;
+        this.ssn = ssn;
+        this.jobTitle = jobTitle;
+        this.salary = salary;
+        this.gender = gender;
+    }
+
+/*
     public void setEmployeeInfo(String name, int id, int ssn, String jobTitle, double salary, char gender ){
         this.name = name;
         this.id = id;
@@ -38,6 +48,8 @@ public class Employee {
         this.salary = salary;
         this.gender = gender;
     }
+*/
+
 
     public String toString(){
         return "Name: "+name+"\nGender: "+gender+"\nID: "+id+"\nSSN: "+ssn+"\nJobTitle: "+jobTitle+

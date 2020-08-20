@@ -2,14 +2,15 @@ package day39_CustomClass;
 
 public class DogObjects {
     public static void main(String[] args) {
-        Dog dog1 = new Dog();
-        Dog dog2 = new Dog();
-        Dog dog3 = new Dog();
+        Dog dog1 = new Dog("Siwan","Neapolitan Mastiff","Large",5,"Black");
+        Dog dog2 = new Dog("Karabas","Maltese","Small",2,"White");
+        Dog dog3 = new Dog("Joy","Chow Chow","Medium",3,"brown");
 
-
+/*
         dog1.setDogInfo("Siwan","Neapolitan Mastiff","Large",5,"Black");
         dog2.setDogInfo("Karabas","Maltese","Small",2,"White");
         dog3.setDogInfo("Joy","Chow Chow","Medium",3,"brown");
+*/
 
         dog1.getDogInfo();
         dog2.getDogInfo();

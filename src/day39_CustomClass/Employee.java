@@ -8,7 +8,14 @@ public class Employee {
     String jobTitle;
     Double salary;
 
-
+    public Employee(String employeeName, char employeeGender, Long employeeSSN, String employeeJobTitle, Double employeeSalary){
+        name = employeeName;
+        gender = employeeGender;
+        SSN = employeeSSN;
+        jobTitle = employeeJobTitle;
+        salary = employeeSalary;
+    }
+/*
     public void setEmployeeInfo(String employeeName, char employeeGender, Long employeeSSN, String employeeJobTitle, Double employeeSalary){
        name = employeeName;
        gender = employeeGender;
@@ -16,7 +23,7 @@ public class Employee {
        jobTitle = employeeJobTitle;
        salary = employeeSalary;
     }
-
+*/
     public void getEmployeeInfo(){
         System.out.println("Name: "+name+", Gender: "+gender+", JobTitle: "+jobTitle+", Salary: "+salary);
 
