@@ -22,10 +22,10 @@ public class HumanResources {
         employee5= new Employee();
 
         // set all the info of the Employees
-        employee1.setInfo("Muhammed",12312,456432,"SDET",120000,'M');
-        employee2.setInfo("Erkan",45678,123987,"QA",115000,'M');
-        employee3.setInfo("Asiya",56431,657098,"Instructor",99000,'F');
-        employee4.setInfo("Ayse",17876,342567,"SDET",125000,'F');
-        employee5.setInfo("Ahmet",67543,987654,"Developer",140000,'M');
+        employee1.setEmployeeInfo("Muhammed",12312,456432,"SDET",120000,'M');
+        employee2.setEmployeeInfo("Erkan",45678,123987,"QA",115000,'M');
+        employee3.setEmployeeInfo("Asiya",56431,657098,"Instructor",99000,'F');
+        employee4.setEmployeeInfo("Ayse",17876,342567,"SDET",125000,'F');
+        employee5.setEmployeeInfo("Ahmet",67543,987654,"Developer",140000,'M');
     }
 }

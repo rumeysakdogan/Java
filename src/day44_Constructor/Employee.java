@@ -30,7 +30,7 @@ public class Employee {
         isEmployed = true;
     }
 
-    public void setInfo(String name, int id, int ssn, String jobTitle, double salary, char gender ){
+    public void setEmployeeInfo(String name, int id, int ssn, String jobTitle, double salary, char gender ){
         this.name = name;
         this.id = id;
         this.ssn = ssn;
