@@ -7,17 +7,13 @@ public class DogPark {
 
     public static void main(String[] args) {
 
-        Dog dog1 = new Dog();
-
-        Dog[] dogPark = { new Dog(), new Dog(), new Dog(), new Dog(), new Dog() };
+        Dog[] dogPark = { new Dog("Karaoglan", "German Shepperd", "Medium",  6, "Black"),
+                new Dog("Akbas", "Anatolian Sheppard", "Large",  2, "White"),
+                new Dog("Red", "Golden", "Medium",  4, "Yellow"),
+                new Dog("Chance", "Cocker spaniel", "small",1,"Golden"),
+                new Dog("Roko", "German Sheper", "Medium", 3, "Brown") };
 // index#:                  0           1          2          3          4
 
-
-        dogPark[0].setDogInfo("Karaoglan", "German Shepperd", "Medium",  6, "Black");
-        dogPark[1].setDogInfo("Akbas", "Anatolian Sheppard", "Large",  2, "White");
-        dogPark[2].setDogInfo("Red", "Golden", "Medium",  4, "Yellow");
-        dogPark[3].setDogInfo("Chance", "Cocker spaniel", "small",1,"Golden");
-        dogPark[4].setDogInfo("Roko", "German Sheper", "Medium", 3, "Brown");
 
 
         for (int i = 0; i < dogPark.length ; i++) {
