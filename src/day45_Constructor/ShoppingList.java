@@ -22,12 +22,24 @@ public class ShoppingList {
         listOfItems.addAll(Arrays.asList(item1, item2, item3, item4, item5));
 
 
-        double totalcost = 0;
+        double totalCost = 0;
 
         for (Item each : listOfItems){
-            totalcost += each.calcCost();
+            totalCost += each.calcCost();
         }
 
-        System.out.println("Total cost for the shopping: "+totalcost);
+        System.out.println("Total cost for the shopping: "+totalCost);
+
+        System.out.println("============================================");
+
+        Item[] items ={ item1, item2, item3, item4, item5 };
+
+        double totalCost2 = 0;
+        for (int i = 0; i < 5; i++) {
+            totalCost2 += items[i].calcCost();
+        }
+
+        System.out.println("Total cost: " + totalCost2);
+
     }
 }
