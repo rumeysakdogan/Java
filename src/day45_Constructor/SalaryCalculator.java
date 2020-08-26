@@ -39,10 +39,11 @@ public class SalaryCalculator {
         return salary() * federalTaxRate;
     }
     public double salaryAfterTax(){
-        return salary()-stateTax()-federalTax();
+        return salary() - stateTax() - federalTax();
     }
 
     public String toString(){
-        return "Hourly Rate: " + hourlyRate + "\nWeekly Hours: " + weeklyHours +"\nSalary: " + salary();
+        return "Salary: " + salary() + "\nState Tax: "+stateTax() + "\nFederal Tax: "+federalTax() + "\nSalary After Tax: "+salaryAfterTax();
     }
+
 }
