@@ -22,8 +22,13 @@ public class ConstructorCalls2 {
     }
 
     public ConstructorCalls2(char c){
-        this();
+        this();    // MUST be at the first step!
         System.out.println("D");
+    }
+
+    public ConstructorCalls2(double a){
+        System.out.println("E");
+       // this(10);    if you want to call a constructor, it has to be written "at the first step"
     }
 
     public static void main(String[] args) {
