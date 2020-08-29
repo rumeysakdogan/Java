@@ -25,4 +25,16 @@ public class AccessModifiers {
         System.out.println("private method");
     }
 
+    public static void main(String[] args) {
+
+        publicMethod();
+        defaultMethod();
+        privateMethod();
+
+        System.out.println(publicVariable);
+        System.out.println(privateVariable); // since all of them are static, we can call all of them in the static method
+        System.out.println(defaultVariable);
+
+
+    }
 }

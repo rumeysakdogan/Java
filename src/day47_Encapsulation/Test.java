@@ -12,5 +12,12 @@ public class Test {
 
         //System.out.println(AccessModifiers.privateVariable); private is accessible only in the same class.
         //AccessModifiers.privateMethod();
+
+        Encapsulation obj1 = new Encapsulation();
+        System.out.println( obj1.getSsn() );    // getter
+
+        obj1.setSsn(87654321);                  // setter
+        System.out.println( obj1.getSsn() );    //getter
+
     }
 }
