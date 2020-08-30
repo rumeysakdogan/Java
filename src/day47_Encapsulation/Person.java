@@ -43,4 +43,9 @@ public class Person {
     public void setAddress(String address) {
         this.address = address;
     }
+
+    public  String toString(){
+        return "Name: " + name + ", Age: " + age +
+                ", Gender: " + gender + ", DOB: " + DOB;
+    }
 }
