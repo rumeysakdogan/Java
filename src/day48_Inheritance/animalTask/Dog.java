@@ -4,12 +4,12 @@ public class    Dog     extends     Animal      {
     //    sub(child/derived)   super(parent/base)
 
     /*
-    variables: 4 -> name, size, age, gender
+    variables: 6 -> name, size, age, gender, breed, lb
     methods: 5 -> setInfo, eat, sleep, bark, toString
      */
 
-    public Dog(String name, String size, int age, char gender) {
-        setInfo(name, size, age, gender);
+    public Dog(String name, String size, int age, char gender, String breed, double lb) {
+        setInfo(name, size, age, gender, breed, lb);
     }
 
     public void bark(){
