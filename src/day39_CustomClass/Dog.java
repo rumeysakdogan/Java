@@ -23,7 +23,7 @@ public class Dog {
         color = dogColor;
     }
 
- /*    sets the info of the dog
+ /*    sets the info of the Dog
 
     public void setDogInfo(String dogName, String dogBreed, String dogSize, int dogAge, String dogColor){
         name = dogName;
@@ -37,7 +37,7 @@ public class Dog {
     public void getDogInfo(){
         System.out.println("Name: " + name + ", Breed: " + breed +", Size: " + size +", Color: " + color + ", Age: "+age+" years old");
     }
-    // prints the dog info
+    // prints the Dog info
 
     public void eat(String food){
         System.out.println(name+ " is eating "+food);

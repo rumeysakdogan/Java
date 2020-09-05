@@ -15,8 +15,8 @@ public class String_Intro {
 
         System.out.println(s1 == s2);
 
-        String d1 = "Dog";  // Dog and dog are two different objects, bcs Java is  case sensitive
-        String d2 = "dog";  // d1 != d2
+        String d1 = "Dog";  // Dog and Dog are two different objects, bcs Java is  case sensitive
+        String d2 = "Dog";  // d1 != d2
 
         System.out.println(d1 == d2);
 
