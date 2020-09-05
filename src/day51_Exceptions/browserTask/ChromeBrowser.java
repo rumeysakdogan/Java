@@ -6,11 +6,12 @@ package day51_Exceptions.browserTask;
  */
 public class ChromeBrowser extends WebDriver{
 
+    @Override
     public void get(String url){
         System.out.println("Opening the " + url + " in the chrome browser");
     }
 
-
+    @Override
     public void close() {
         System.out.println("Closing the chrome browser");
     }
