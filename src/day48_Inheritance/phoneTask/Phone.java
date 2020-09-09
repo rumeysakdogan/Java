@@ -1,29 +1,37 @@
 package day48_Inheritance.phoneTask;
 /*
 PhoneTasks:
-        1. create a class called Phone
-                instance variables: model, price, screenSize
-                static variables (DO NOT initialize them): brand, operatingSystem, madeIn
-                            No static block is neede!
-                methods: call, text, selfie, setInfo, toString
-        2. create a subclass of Phone called iPhone
-                initialize all the variables using constructor & static block
-                methods: call, text, selfie, setInfo, toString, faceTime
-        3. create a subclass of Phone called Samsung
-                initialize all the variables using constructor & static block
-                methods: call, text, selfie, setInfo, toString, freeze
-        4. create a subclass of Phone called Nokia
-                initialize all the variables using constructor & static block
-                methods: call, text, selfie, setInfo, toString, breakTheFloor
-        5. create a class called phone objects:
-                         create three objects of each phone and test everything out
+      Phone: brand, model, price, madeIn, call(), text()
+    static: brand, madeIn
+    instances: model, price, call(), text(), toString()
+Samsung: brand, model, price, madeIn, call(), text(), toString()
+Iphone: brand, model, price, madeIn, call(), text(), toString()
+Nokia: brand, model, price, madeIn, call(), text(), toString()
+overriding: one method with different implemntations
 
  */
 public class Phone {
 
+    public static String brand;
+    public static String madeIn;
+
     public String model;
     public double price;
-    public double screenSize;
 
+    public Phone(String model, double price) {
+        this.model = model;
+        this.price = price;
+    }
 
+    protected void call(long phoneNumber){
+        System.out.println("Phone is calling "+phoneNumber);
+    }
+
+    protected void text(long phoneNumber){
+        System.out.println("Phone is texting to " + phoneNumber);
+    }
+
+    public String toString() {
+        return "Brand: " + brand + ", Model: " + model + ", Price: $" +  price + ", Made in: " + madeIn;
+    }
 }

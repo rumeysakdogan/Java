@@ -7,7 +7,7 @@ Device Task:
         2. create a sub class of Device called TV:
                     attributes: brand, model, price, MadeIn, hasBattery, hasMemory, screenSize, RemoteControl
                     methods: watch, setInfo, toString
-                    add a constructor that can set the fileds
+                    add a constructor that can set the fields
         3. create a sub class of device called phone:
                     attributes: brand, model, price, MadeIn, screenSize, hasBattery, hasMemory, hasSimCard, OS
                     methods: call, text, setInfo, toString
