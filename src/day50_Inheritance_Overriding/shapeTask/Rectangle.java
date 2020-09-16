@@ -12,10 +12,10 @@ public class Rectangle extends Shape{
         perimeter = calcPerimeter();
     }
 
+    @Override
     public double calcArea() {
         return length * width;
     }
-
 
     public double calcPerimeter() {
         return 2 * (length + width);
