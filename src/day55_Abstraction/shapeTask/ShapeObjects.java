@@ -9,8 +9,8 @@ public class ShapeObjects {
 
     public static void main(String[] args) {
 
-        Circle circle1 = new Circle(-2.5);
-        Rectangle rectangle = new Rectangle(3.2,0);
+        Circle circle1 = new Circle(2.5);
+        Rectangle rectangle = new Rectangle(3.2,10);
 
 
         System.out.println( circle1 );
@@ -20,7 +20,7 @@ public class ShapeObjects {
         System.out.println(rectangle);
         System.out.println( Rectangle.hasVolume);
         System.out.println("=============================");
-        Cylinder cylinder = new Cylinder(6,3);
+        Cylinder cylinder = new Cylinder(-6,3);
         System.out.println(cylinder);
     }
 }
