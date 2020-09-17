@@ -26,12 +26,11 @@ public final class Circle extends Shape {
         area = calculateArea();
         perimeter = calculatePerimeter();
         volume = calculateVolume();
-    }
-
-    static{
         name ="Circle";
         hasVolume = false;
     }
+
+
 
     @Override
     public double calculateArea() {

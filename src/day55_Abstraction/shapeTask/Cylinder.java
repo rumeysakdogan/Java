@@ -23,13 +23,9 @@ public final class Cylinder extends Shape{
         area = calculateArea();
         perimeter = calculatePerimeter();
         volume = calculateVolume();
-
+        name = "Cylinder";
+        hasVolume = true;
     }
-
-    static {
-       name = "Cylinder";
-       hasVolume = true;
-   }
 
     @Override
     public double calculateArea() {
