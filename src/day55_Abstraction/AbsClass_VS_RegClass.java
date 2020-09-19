@@ -26,7 +26,7 @@ abstract class B{    // cannot create object from it, cannot be final
 
     static {}
 
-    public A(){}
+    public B(){}
 
     public abstract void method3();
 }
