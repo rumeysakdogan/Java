@@ -2,7 +2,7 @@ package day56_Abstraction.animalTask;
 
 public interface Flyable {
 
-    boolean hasWings = true;
-    public abstract void fly();
+    boolean hasWings = true;  // by default public
+    abstract void fly();  // public
 
 }
