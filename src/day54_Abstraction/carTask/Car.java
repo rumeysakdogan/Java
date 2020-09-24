@@ -17,6 +17,7 @@ Ex2:
 public abstract class Car {   // cannot be final
 
     public abstract void start();
+
 }
 
 

@@ -1,4 +1,4 @@
-package day57_Polymorphism;
+package day57_Polymorphism.phoneTask;
 //    4. create an abstract class named Phone
 //            instance variables: brand, model, price, size
 //            abstract methods: texting(), calling()
