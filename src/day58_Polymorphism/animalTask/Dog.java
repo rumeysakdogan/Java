@@ -19,6 +19,16 @@ public class Dog extends Animal{
     }
 
     @Override
+    public void eat() {
+        System.out.println("Dog " + dogName + " is eating");
+    }
+
+    @Override
+    public void sleep() {
+        System.out.println("Dog " + dogName + " is sleeping");
+    }
+
+    @Override
     public String toString() {
         return "Dog{" +
                 "dogName='" + dogName + '\'' +
