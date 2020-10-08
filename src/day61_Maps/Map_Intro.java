@@ -14,5 +14,7 @@ public class Map_Intro {
 
         Map<String,Integer> map4 = new Hashtable<>();   // is synchronized ==> Thread-safe
 
+
+
     }
 }
